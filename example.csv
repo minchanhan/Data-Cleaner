@@ -1,0 +1,13 @@
+Numbers,Strings,Mix
+0,This is a string,Anything goes here
+1,The string below this will be a # by mistake,12345
+2,2020,MI
+3,The next number will be a string,Fun stuff
+Four,And a missing value ->,n/a
+na,<- more missing values ->,-
+6,next string is empty!,next mix is also missing value
+7,,--
+8, ,<- This "string" is a space
+9.9,Floats remain!,10.242423232424
+
+

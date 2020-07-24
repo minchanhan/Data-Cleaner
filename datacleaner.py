@@ -18,7 +18,7 @@ while(True):
         break
     missing_values = missing_values + [moremissing]
 
-# Read Data (replace yourdata with your csv file)
+# Read Data (replace yourdata with your csv file path)
 yourdata = "C:\DEV\example.csv"
 
 # Replace yourdata with "yourfile.csv", make sure to put data file in same folder as script
