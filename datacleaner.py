@@ -22,9 +22,15 @@ while(True):
 yourdata = "C:\DEV\example.csv"
 
 # Replace yourdata with "yourfile.csv", make sure to put data file in same folder as script
+olddf = pd.read_csv(yourdata)
 df = pd.read_csv(yourdata, na_values=missing_values) 
 
 # Preview your data (Visualizations will be implemented soon!)
+print("Old:\n")
+print(olddf.head(10))
+print("\n")
+
+print("Missing rows filled:\n")
 print(df.head(10)) # Change # of rows if you'd like
 print("\n")
 
@@ -71,10 +77,11 @@ while(True):
 
 
 # Preview New Data Frame
+print("\n\n")
 print(df.head(10))
 
-# Uncomment line below to save new Data Frame to relative location. Feel free to change the name from result!
-# df.to_csv("result.csv")
+# UNcomment line below to save new Data Frame to relative location. Feel free to change the name from result!
+df.to_csv("result.csv")
 
 
 
