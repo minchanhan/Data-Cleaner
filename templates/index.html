@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Cleaning Calculator</title>
+</head>
+<body>
+    <h1>Data Cleaning Tool</h1>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <form method="POST" enctype="multipart/form-data"> 
+        <label for="file">Please upload a valid CSV file:</label>
+        <input type="file" name="file" id="file" required><br><br>
+
+        <label for="missing_values">Enter missing value symbols from your data (comma-separated, no spaces):</label>
+        <input type="text" name="missing_values" id="missing_values" 
+               value=" ,n/a,na,-,/," required><br><br>
+
+        <label for="string_cols">Enter string type columns (comma-separated, no spaces):</label>
+        <input type="text" name="string_cols" id="string_cols"><br><br>
+
+        <label for="number_cols">Enter numeric columns (comma-separated, no spaces):</label>
+        <input type="text" name="number_cols" id="number_cols"><br><br>
+
+        <button type="submit">Download Result</button>
+    </form>
+
+    <p>This tool can be used to clean your data set before using it! Easily deal with type errors and missing values.</p>
+    <p>Just enter the required inputs and your data will be downloaded with type errors and missing values removed.</p>
+
+</body>
+</html>

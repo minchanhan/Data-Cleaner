@@ -19,7 +19,7 @@ while(True):
     missing_values = missing_values + [moremissing]
 
 # Read Data (replace yourdata with your csv file path)
-yourdata = "C:\DEV\example.csv"
+yourdata = "example.csv"
 
 # Replace yourdata with "yourfile.csv", make sure to put data file in same folder as script
 olddf = pd.read_csv(yourdata)
